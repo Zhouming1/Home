@@ -1,0 +1,30 @@
+{
+  "home" : [
+    {
+    "img":"image/SecondHandList/img1.png",
+    "title":"西便门外大街2室1厅89平",
+    "ceng":"南北 高楼层/6层",
+    "price":"签约价格:13244元",
+    "money":"1105万",
+    "date":"签约日期:2015年11月10日"
+  },
+    {
+      "img":"image/SecondHandList/img2.png",
+      "title":"金桥国际 1室1厅63平",
+      "ceng":"南北 高楼层/6层",
+      "price":"签约价格:13244元",
+      "money":"905万",
+      "date":"签约日期:2015年11月10日"
+    },
+    {
+      "img":"image/SecondHandList/img3.png",
+      "title":"花涧溪二期 2室2厅 90平",
+      "ceng":"南北 高楼层/6层",
+      "price":"签约价格:13244元/平",
+      "money":"1322万",
+      "date":"签约日期:2015年11月10日"
+    }
+  ]
+
+
+}

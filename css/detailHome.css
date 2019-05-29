@@ -1,0 +1,238 @@
+html,body{
+    background: #f5f5f5;
+}
+li{
+    list-style: none;
+}
+section{
+    width: 100%;
+}
+.swiper-container{
+    height: 1.7rem;
+    position: relative;
+}
+.swiper-wrapper .swiper-slide img{
+    width: 100%;
+    height: 1.7rem;
+}
+.swiper-pagination-fraction {
+    background: rgba(0, 0, 0, .5);
+    width: .5rem;
+    font-size: .12rem;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    left: 2.7rem;
+    border-radius: .1rem;
+}
+/*介绍*/
+.h_message{
+    padding: .2rem;
+    font-size: .16rem;
+    border-bottom: 1px solid #ccc;
+    background: white;
+    overflow: hidden;
+}
+.h_message h3{
+    font-size: .18rem;
+}
+.h_message p{
+    margin-top: .1rem;
+}
+.h_message p:nth-child(2)>span{
+    color: rgba(224,96,63,1);
+}.h_message p:nth-child(2)>img{
+    width: .15rem;
+    height: .2rem;
+    margin-left: .5rem;
+ }
+.h_message p:nth-child(3){
+    font-size: .12rem;
+    color: #b5b7bc;
+}
+.h_message p:nth-child(4){
+    font-size: .12rem;
+    color: #90a5b8;
+}
+.h_message p:nth-child(4)>span{
+    display: inline-block;
+    width: .5rem;
+    margin-right: .2rem;
+    text-align: center;
+    background: #dee9f0;
+}
+/*房子详情*/
+.h_content{
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    margin-top: 0.12rem;
+    padding:0 0.2rem;
+    font-size: .12rem;
+    background: white;
+}
+.h_content li{
+    height: 0.5rem;
+    line-height: 0.5rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+.h_content li:last-child{
+    border-bottom:none;
+    text-align: center;
+    color: #999999;
+}
+.h_content li div{
+    display: inline-block;
+    width: 48%;
+}
+/*房源特色*/
+.h_style,.h_content2,.school,.place{
+    background: #fff;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    margin-top: 0.12rem;
+    padding:0 0.2rem;
+    font-size: .12rem;
+    overflow: hidden;
+}
+.h_style h2{
+    line-height: 0.54rem;
+    font-size: 0.16rem;
+    color: #ff9326;
+    border-bottom: 1px solid #e5e5e5;
+}
+.h_style p:nth-child(2){
+    line-height: 0.24rem;
+    border-bottom: 1px solid #e5e5e5;
+    padding: 0.14rem 0;
+}
+.h_style p:last-child{
+    line-height: 0.5rem;
+    color: #999;
+    text-align: center;
+}
+/*户型分间*/
+.h_content2>h2{
+    line-height: 0.5rem;
+    color: #ff9326;
+    border-bottom: 1px solid #e5e5e5;
+}
+.h_content2 li{
+    padding: 0.2rem 0;
+    border-bottom: 1px solid #ff8a00;
+    overflow: hidden;
+}
+.h_content2 li >img{
+    width: .8rem;
+    height:.8rem;
+    float: left;
+}
+.h_content2 li .right{
+    width: 65%;
+    float: left;
+    margin-left: 0.1rem;
+    line-height: 2;
+}
+.h_content2 li:last-child{
+    border-bottom: none;
+}
+.right h2{
+    font-size: .14rem;
+}
+.right p:last-child >span{
+    display: inline-block;
+    padding: 0.05rem;
+    color: #849aae;
+    background: #f4f7f9;
+    margin-right: 0.06rem;
+}
+/*学校*/
+.school h2{
+    font-size: .12rem;
+    line-height: .5rem;
+}
+.school li{
+    line-height: 0.5rem;
+    border-top: 1px solid #e5e5e5;
+}
+.school li:last-child{
+    text-align:center;
+}
+.school li:last-child a{
+    color: #a1a1a1;
+}
+/*位置*/
+.place h2{
+    line-height: 0.5rem;
+    border-bottom: 1px solid #e5e5e5;
+}
+/*推荐*/
+.recommend{
+    background: #fff;
+    border-top: 1px solid #e5e5e5;
+    border-bottom: 1px solid #e5e5e5;
+    margin-top: 0.12rem;
+    font-size: .12rem;
+}
+.recommend h2{
+    line-height: 0.5rem;
+    border-bottom: 1px solid #e5e5e5;
+    padding-left:.2rem ;
+}
+.recommend ul{
+    padding: 0 .2rem;
+}
+.recommend li{
+    padding-top: .2rem;
+    border-bottom: 1px solid #e5e5e5;
+    position: relative;
+    padding-bottom: 0.55rem;
+    overflow: hidden;
+}
+.recommend li >img{
+    width: .8rem;
+    height:.8rem;
+    float: left;
+}
+.recommend li .text{
+    width: 65%;
+    float: left;
+    margin-left: 0.1rem;
+    line-height: 1.8;
+}
+.recommend li .text a{
+    display: inline-block;
+    padding: 0 0.05rem;
+    color: #849aae;
+    background: #f4f7f9;
+}
+.recommend li:last-child{
+    border-bottom: none;
+}
+.recommend li .span{
+    position: absolute;
+    bottom: .15rem;
+    left: 0;
+    background: #f2f2f2;
+    width: 100%;
+    padding: 0.1rem;
+}
+.recommend li .span span{
+    position: absolute;
+    top: -0.18rem;
+    left: 0;
+    width: 0;
+    height: 0;
+    border-top: 0.1rem solid transparent;
+    border-right: 0.1rem solid transparent;
+    border-bottom: 0.1rem solid #f2f2f2;
+    border-left: 0.1rem solid transparent;
+    margin-left: 0.04rem;
+}
+.recommend .more{
+    border-top: 1px solid #e5e5e5;
+    padding: .2rem;
+    text-align: center;
+}
+.recommend .more a{
+    color: #a1a1a1;
+}

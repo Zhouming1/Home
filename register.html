@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+     user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>注册</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<!--头部-->
+<header>
+    <div class="logo"><a href="index.html"></a></div>
+    <div class="h_right">
+        <a href=""></a>
+        <a href=""></a>
+    </div>
+</header>
+<section class="rentalAddr">
+    <p><strong>首页</strong> > <span>我的</span> > <span>注册</span></p>
+</section>
+
+<section class="registerForm">
+    <form action="#">
+        <ul>
+            <li class="mima">
+                <input type="text" placeholder="请输入手机号码" id="user"/>
+                <!--<a id="num"  href="#">发送验证码</a>-->
+            </li>
+            <li><input type="password" placeholder="请输入密码" id="password"/></li>
+        </ul>
+        <input class="registerBtn" type="submit" value="立即注册"/>
+    </form>
+</section>
+<section>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+</section>
+<footer>
+    <div class="bottom">
+        <div class="b_top">北京找房无忧网><a href="index.html">首页</a></div>
+        <div class="b_bottom">
+            <div class="pic">
+                <div class="ipone"><i><img src="image/index/apple.png" alt=""></i><span>iPhone客户端</span></div>
+                <div class="android"><i><img src="image/index/android.png" alt=""></i><span>Android客户端</span></div>
+            </div>
+        </div>
+        <div class="text">
+            <p>北京找房无忧房地产经纪公司</p>
+            <p>网络经营许可证京ICP备20160812号</p>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
+
+<script src="js/rem.js"></script>
+<script src="js/zepto.js"></script>
+<script>
+    // //验证码60秒重新发送
+    // var min  = 60;
+    // var time;
+    // $('#num').tap(function(){
+    //     clearInterval(time);
+    //     time = setInterval(fn,1000);
+    // });
+    // function fn (){
+    //     min = --min ;
+    //     if(min>0){
+    //         $('#num').html('（' + min + '秒）重发');
+    //     }else{
+    //         $('#num').html('发送验证码');
+    //     }
+    // }
+    $.ajax({
+        url:"https://www.apiopen.top/createUser/",
+        data:{
+            // apikey:"d0058f79caae5300dcba65f128e52855",
+            phone:$("#user").val(),
+            passwd:$("#password").val()
+        },
+        type:"post",
+        dataType:"JSON",
+        success:function (data) {
+            console.log(data);
+        },
+        error:function (err) {
+            throw err;
+        }
+    })
+
+</script>

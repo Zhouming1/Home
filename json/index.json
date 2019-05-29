@@ -1,0 +1,35 @@
+{
+  "home" : [
+    {
+      "img":"image/index/img1.jpg",
+      "title":"文化部中间层  一层带阁楼",
+      "ceng":"2室1厅96㎡南北",
+      "money":"1105万",
+      "text1":"红庙北里",
+      "text2":"14268元/平",
+      "text3":"学区房",
+      "text4":"独家"
+    },
+    {
+      "img":"image/index/img2.png",
+      "title":"光大水墨  精装复式 稀缺",
+      "ceng":"室1厅96㎡南北",
+      "money":"280万",
+      "text1":"光大水墨",
+      "text2":"14268元/平",
+      "text3":"学区房",
+      "text4":"独家",
+      "text5":"满五唯一"
+    },
+    {
+      "img":"image/index/img3.png",
+      "title":"南北通透两居  精装修 无",
+      "ceng":"2室1厅96㎡南北",
+      "money":"320万",
+      "text1":"红庙北里",
+      "text2":"14268元/平",
+      "text3":"学区房",
+      "text4":"独家"
+    }
+  ]
+}

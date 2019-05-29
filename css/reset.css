@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    /*font-family: 'Microsoft YaHei',SimHei,"微软雅黑","黑体";*/
+}
+li{
+    list-style: none;
+}
+input{
+    outline: none;
+}
+a{
+    text-decoration: none;
+    color: #666666;
+    -webkit-tap-highlight-color: rgba(255,255,255,0);
+}
+
+html {
+    font-size: 100px;
+}
+body{
+    background: #f5f5f5;
+    font-size: 0.12rem;
+
+}
+
+/*网页头部代码*/
+header {
+    height: 0.42rem;
+    background: #ff8a00;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 0;
+}
+
+header h1 img {
+    width: 1rem;
+    height: 0.34rem;
+}
+
+header .icon {
+    font-size: 0;
+}
+header .icon img {
+    width: 0.23rem;
+    height: 0.29rem;
+    margin-left: 0.2rem;
+}
+/*网页底部版权部分*/

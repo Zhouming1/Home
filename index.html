@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,
+     user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+    <title>首页</title>
+    <link rel="stylesheet" href="css/public.css">
+    <link rel="stylesheet" href="css/index.css">
+    <script src="js/rem.js"></script>
+</head>
+<body>
+<!--头部-->
+<header>
+    <div class="logo"><a></a></div>
+    <div class="h_right">
+        <a href="register.html"></a>
+        <a href=""></a>
+    </div>
+</header>
+<!--焦点图-->
+<section>
+    <div class="banner">
+        <div class="search">
+            <p><input type="text" placeholder="输入小区或商圈名开始找房咯！"></p>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="HomeLIst.html"><i><img src="image/index/index_03.png" alt=""></i></a><span>二手房</span></li>
+            <li><a href="HomeLIst.html"><i><img src="image/index/index_05.png" alt=""></i></a><span>新房</span></li>
+            <li><a href="HomeLIst.html"><i><img src="image/index/index_07.png" alt=""></i></a><span>租房</span></li>
+            <li><a href="HomeLIst.html"><i><img src="image/index/index_09.png" alt=""></i></a><span>卖房</span></li>
+        </ul>
+    </nav>
+    <div class="banner2">
+        <img src="image/index/banner2.png" alt="">
+    </div>
+    <div class="content">
+        <div class="title">
+            <h3>热门房源</h3>
+            <p>Hot house</p>
+        </div>
+        <div class="list">
+            <ul>
+                <script id="content" type="text/x-dot-template">
+                    {{~it.home:value:index}}
+                    <li>
+                        <img src="{{=value.img}}">
+                        <div class="list_text">
+                            <h2>{{=value.title}}</h2>
+                            <p><span>{{=value.ceng}}</span><span class="color">{{=value.money}}</span></p>
+                            <p><span>{{=value.text1}}</span> <span>{{=value.text2}}</span></p>
+                            <p><span>{{=value.text3}}</span><span>{{=value.text4}}</span></p>
+                        </div>
+                    </li>
+                    {{~}}
+                </script>
+            </ul>
+        </div>
+    </div>
+    <div class="hot">
+        <div class="hot_title">
+            <span>热门关注</span>
+            <span>友情链接</span>
+        </div>
+        <div class="hot_content">
+            <ul>
+                <li><a href="detailHome.html">北京二手房</a><a href="detailHome.html">北京找房无忧</a></li>
+                <li><a href="detailHome.html">北京二手房价</a><a href="detailHome.html">青年家园</a></li>
+                <li><a href="detailHome.html">海淀日租房</a><a href="detailHome.html">免税房源</a></li>
+                <li><a href="detailHome.html">朝阳新房</a><a href="detailHome.html">满五年唯一免税</a></li>
+            </ul>
+        </div>
+    </div>
+</section>
+<!--免费下载-->
+<div class="free">
+    <i class="close"></i>
+    <i><img src="image/index/download.png" alt=""></i>
+    <div class="free_text"><p>找房无忧</p>
+    <p>市场行情，一手掌握</p></div>
+    <div class="xiazai"><a href="">免费下载</a></div>
+
+</div>
+<!--底部-->
+<footer>
+    <div class="bottom">
+        <div class="b_top">北京找房无忧网><a href="#">首页</a></div>
+        <div class="b_bottom">
+            <div class="pic">
+                <div class="ipone"><i><img src="image/index/apple.png" alt=""></i><span>iPhone客户端</span></div>
+                <div class="android"><i><img src="image/index/android.png" alt=""></i><span>Android客户端</span></div>
+            </div>
+        </div>
+        <div class="text">
+            <p>北京找房无忧房地产经纪公司</p>
+            <p>网络经营许可证京ICP备20160812号</p>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
+<script src="js/zepto.js"></script>
+<script src="js/doT.min.js"></script>
+<script>
+    Zepto(function ($) {
+        $(".close").tap(function () {
+            $(".free").hide();
+        })
+        $.ajax({
+            url: "./json/index.json",
+            dataType: "json",
+            success: function (data) {
+                console.log(data);
+                var lis = doT.template($("#content").text());
+                $(".list ul").html(lis(data));
+            }
+        })
+    })
+</script>
